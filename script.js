@@ -117,7 +117,7 @@ function yesButtonListener() {
     questionMain.innerHTML = "Yiiiippeeeee! Thank you for loving me ❤️, " + input + "!";
     yesButton.innerHTML = "Shuffle!";
     yesButton.style.marginLeft = "0px";
-    yesButton.style.width = "50%";
+    yesButton.style.width = "75%";
     noButton.style.display = "none";
 
     playRandomAudio();
@@ -139,7 +139,7 @@ function playAudio(url) {
 function noButtonListener() {
 
     yesButton.style.marginLeft = "0px";
-    yesButton.style.width = "50%";
+    yesButton.style.width = "75%";
     
     if (count == 1) {
         gifMain.src = "https://media.giphy.com/media/hbOgjMOUfLdWV2Ty1j/giphy.gif";
