@@ -137,6 +137,10 @@ function playAudio(url) {
 }
 
 function noButtonListener() {
+
+    yesButton.style.marginLeft = "0px";
+    yesButton.style.width = "50%";
+    
     if (count == 1) {
         gifMain.src = "https://media.giphy.com/media/hbOgjMOUfLdWV2Ty1j/giphy.gif";
         questionMain.innerHTML = "You don't love me?";
