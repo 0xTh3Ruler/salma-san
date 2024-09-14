@@ -116,6 +116,8 @@ function yesButtonListener() {
     gifMain.src = getRandomGif();
     questionMain.innerHTML = "Yiiiippeeeee! Thank you for loving me ❤️, " + input + "!";
     yesButton.innerHTML = "Shuffle!";
+    yesButton.style.marginLeft = "0px";
+    yesButton.style.width = "50%";
     noButton.style.display = "none";
 
     playRandomAudio();
