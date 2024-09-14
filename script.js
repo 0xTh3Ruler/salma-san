@@ -63,13 +63,27 @@ const audioFiles = [
     'https://www.myinstants.com/media/sounds/all-my-fellaz.mp3'
 ];
 
+let currentAudio = null;
+
 function playRandomAudio() {
+    // Stop and reset the current audio if it's playing
+    if (currentAudio) {
+        currentAudio.pause();
+        currentAudio.currentTime = 0; // Reset audio playback position to start
+    }
+
+    // Get a new random audio
     const randomIndex = Math.floor(Math.random() * audioFiles.length);
     const randomAudio = new Audio(audioFiles[randomIndex]);
 
+    // Set the new audio as the current one
+    currentAudio = randomAudio;
+    
+    // Set loop and play the new audio
     randomAudio.loop = true;
     randomAudio.play();
 }
+
 
 // Array of GIF URLs
 const gifLinks = [
@@ -98,14 +112,15 @@ function getRandomGif() {
 }
 
 function yesButtonListener() {
-    document.body.innerHTML = "<div class='wrapper'><h2 class='question'>Yiiiippeeeee! Thank you for loving me ❤️, " + input + "!</h2>" +
-    "<img class='gif' alt='gif' src='" + getRandomGif() + "'/></div><script src='scriptMain.js'></script>";
+
+    gifMain.src = getRandomGif();
+    questionMain.innerHTML = "Yiiiippeeeee! Thank you for loving me ❤️, " + input + "!";
+    yesButton.innerHTML = "Shuffle!";
+    noButton.style.display = "gone";
 
     playRandomAudio();
 
 }
-
-let currentAudio = null; // Keep track of the currently playing audio
 
 function playAudio(url) {
     // If there is already an audio playing, pause it and reset its time
