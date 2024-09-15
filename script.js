@@ -60,7 +60,17 @@ const audioFiles = [
     'https://www.myinstants.com/media/sounds/memes-music-v1.mp3',
     'https://www.myinstants.com/media/sounds/white-tee-rizz_Pw3bPh4.mp3',
     'https://www.myinstants.com/media/sounds/sticking-out-ur-gyat-for-the-rizzler.mp3',
-    'https://www.myinstants.com/media/sounds/all-my-fellaz.mp3'
+    'https://www.myinstants.com/media/sounds/all-my-fellaz.mp3',
+    'https://www.myinstants.com/media/sounds/ponponpon-kyary-pamyu-pamyu-ponponpon-mp3cut_uiBkVha.mp3',
+    'https://www.myinstants.com/media/sounds/nyan_cat_compressed.mp3',
+    'https://www.myinstants.com/media/sounds/bling-bang-bang-born_WV3j6ln.mp3',
+    'https://www.myinstants.com/media/sounds/not-a-rick-roll.mp3',
+    'https://www.myinstants.com/media/sounds/aaron-smith-dancin-krono-remix-011.mp3',
+    'https://www.myinstants.com/media/sounds/this-girl-kungs-golo-fc-porto-button-1.mp3',
+    'https://www.myinstants.com/media/sounds/rawr-x3-nuzzles-pounces-on-you-uwu-so-warm1.mp3',
+    'https://www.myinstants.com/media/sounds/the-perfect-girl-sigma.mp3',
+    'https://www.myinstants.com/media/sounds/moka-chan-osiete-kureta.mp3',
+    'https://www.myinstants.com/media/sounds/you-are-my-sunshine-lebron-james.mp3'
 ];
 
 let currentAudio = null;
@@ -201,7 +211,7 @@ function noButtonListener() {
         gifMain.src = "https://media.giphy.com/media/1xC3XRTwZ3uKd9wuBS/giphy.gif";
         questionMain.innerHTML = "Rah kan9ssed!";
 
-        playAudio('https://www.myinstants.com/media/sounds/mangekyo-sharingan-sound-effect-with-download-link_pWHYt57.mp3');
+        playAudio('https://www.myinstants.com/media/sounds/giornos-theme-but-only-the-best-part-is-in_vwd15lya_lyb0-online-audio-converter.mp3');
 
     }
     else if (count == 10) {
